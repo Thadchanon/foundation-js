@@ -2,7 +2,7 @@ const myFavoriteFood = ["Popcorn", "Apple", "Salad", "Coke"];
 
 console.log("Most favorite food index is " + myFavoriteFood.indexOf("Popcorn"));
 
-// const myFavoriteFoodMore = myFavoriteFood.concat("Candy", "Jelly", "Juiec");
+// const myFavoriteFoodMore = myFavoriteFood.concat("Candy", "Jelly", "Juice");
 
 myFavoriteFood.push("Candy", "Jelly", "Juice");
 
