@@ -196,7 +196,7 @@ const compoundedReturn = (amount, interest, n) => {
 
 If any one of arr members are of non-number type, mean(arr) returns null */
 
-/* const mean = (arr) => {
+/*  const mean = (arr) => {
   let sum = 0;
   const allIsNum = arr.every((value) => {
     return typeof value === "number";
@@ -210,7 +210,7 @@ If any one of arr members are of non-number type, mean(arr) returns null */
   return null;
 }; */
 
-const mean = (arr) => {
+/* const mean = (arr) => {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     if (typeof arr[i] === "number") {
@@ -219,6 +219,18 @@ const mean = (arr) => {
       return null;
     }
   }
+  return sum / arr.length;
+}; */
+
+const mean = (arr) => {
+  let sum = 0;
+  const allIsNum = arr.every((value) => typeof value === "number");
+
+  if (!allIsNum) return null;
+
+  arr.forEach((n) => {
+    sum += n;
+  });
   return sum / arr.length;
 };
 
